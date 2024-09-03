@@ -8,41 +8,41 @@
 </head>
 <body>
     <div class="container">
-        <h1>Team Trivia</h1>
+        <h1>Viktoriin</h1>
         <form id="team-selection-form">
-            <label for="team-name">Team Name:</label>
-            <input type="text" id="team-name" placeholder="Enter your team name" required>
-            <label for="team-number">Select Team Number:</label>
+            <label for="team-name">Tiimi nimi:</label>
+            <input type="text" id="team-name" placeholder="Sisesta tiimi nimi siia" required>
+            <label for="team-number">Vali tiim:</label>
             <select id="team-number">
-                <option value="1">Team 1</option>
-                <option value="2">Team 2</option>
-                <option value="3">Team 3</option>
-                <option value="4">Team 4</option>
-                <option value="5">Team 5</option>
-                <option value="6">Team 6</option>
-                <option value="7">Team 7</option>
+                <option value="1">Tiim 1</option>
+                <option value="2">Tiim 2</option>
+                <option value="3">Tiim 3</option>
+                <option value="4">Tiim 4</option>
+                <option value="5">Tiim 5</option>
+                <option value="6">Tiim 6</option>
+                <option value="7">Tiim 7</option>
             </select>
-            <button type="submit">Start Quiz</button>
+            <button type="submit">Alusta viktoriiniga</button>
         </form>
         
-        <button id="view-scoreboard">View Scoreboard</button>
+        <button id="view-scoreboard">Vaata edetabelit (probs pole sulle)</button>
 
         <div id="quiz" style="display: none;">
             <div id="questions"></div>
-            <button id="submit-quiz">Submit Answers</button>
+            <button id="submit-quiz">Saada vastused</button>
         </div>
 
         <div id="results" style="display: none;">
-            <h2>Results</h2>
+            <h2>Tulemused</h2>
             <ul id="result-list"></ul>
             <p id="summary"></p>
-            <button id="restart-quiz">Restart Quiz</button>
+            <button id="restart-quiz">Tagasi</button>
         </div>
 
         <div id="scoreboard" style="display: none;">
-            <h2>Scoreboard</h2>
+            <h2>Edetabel</h2>
             <ul id="scoreboard-list"></ul>
-            <button id="back-to-main">Back to Main</button>
+            <button id="back-to-main">Tagasi</button>
         </div>
     </div>
     <script src="script.js"></script>
