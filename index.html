@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Trivia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Team Trivia</h1>
+        <form id="team-selection-form">
+            <label for="team-name">Team Name:</label>
+            <input type="text" id="team-name" placeholder="Enter your team name" required>
+            <label for="team-number">Select Team Number:</label>
+            <select id="team-number">
+                <option value="1">Team 1</option>
+                <option value="2">Team 2</option>
+                <option value="3">Team 3</option>
+                <option value="4">Team 4</option>
+                <option value="5">Team 5</option>
+                <option value="6">Team 6</option>
+                <option value="7">Team 7</option>
+            </select>
+            <button type="submit">Start Quiz</button>
+        </form>
+        
+        <button id="view-scoreboard">View Scoreboard</button>
+
+        <div id="quiz" style="display: none;">
+            <div id="questions"></div>
+            <button id="submit-quiz">Submit Answers</button>
+        </div>
+
+        <div id="results" style="display: none;">
+            <h2>Results</h2>
+            <ul id="result-list"></ul>
+            <p id="summary"></p>
+            <button id="restart-quiz">Restart Quiz</button>
+        </div>
+
+        <div id="scoreboard" style="display: none;">
+            <h2>Scoreboard</h2>
+            <ul id="scoreboard-list"></ul>
+            <button id="back-to-main">Back to Main</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
